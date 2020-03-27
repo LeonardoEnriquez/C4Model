@@ -20,11 +20,10 @@ Una recomendacion de los desarrolladores del modelo C4 es no utilizar herramient
 Ir a la siguiente pagina de [GraphViz](https://graphviz.gitlab.io/ "")
 
 
-    Ir a la seccion "Download", ir al instalador de windows que empieza con la palabra "Stable" (en la seccion de Windows), descargar el archivo instalador con extension "msi", instalar GraphViz. Una vez instalado, hay que configurar la variable de entorno desde el panel de control de windows o escribiendo en el buscador de windows la palabra "environment" o "ambiente". La variable de entorno debe llevar por nombre "GRAPHVIZ_DOT" y debe apuntar al archivo "dot.exe" que se encuentra en la carpeta "bin" que a su vez se ubica dentro del directorio de instalacion de GraphViz. Las variables de entorno se pueden administrar en la pestaña "Advanced" dando click en el boton "Environment Variables".
+Ir a la seccion "Download", ir al instalador de windows que empieza con la palabra "Stable" (en la seccion de Windows), descargar el archivo instalador con extension "msi", instalar GraphViz. Una vez instalado, hay que configurar la variable de entorno desde el panel de control de windows o escribiendo en el buscador de windows la palabra "environment" o "ambiente". La variable de entorno debe llevar por nombre "GRAPHVIZ_DOT" y debe apuntar al archivo "dot.exe" que se encuentra en la carpeta "bin" que a su vez se ubica dentro del directorio de instalacion de GraphViz. Las variables de entorno se pueden administrar en la pestaña "Advanced" dando click en el boton "Environment Variables".
     
 **Instalacion de C4-PlantUML**    
-    La libreria C4-PlantUML se debe incluir en cada proyecto, los archivos de la libreria se encuentran en la siguiente pagina:
     
-    https://github.com/RicardoNiepel/C4-PlantUML
+    La libreria C4-PlantUML se debe incluir en cada proyecto, los archivos de la libreria se encuentran en la siguiente pagina [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML "")
             
-    Para poder crear cualquier tipo de diagrama C4 hay que incluir los cuatro archivos con extension "puml" en forma de cascada, empezando por el archivo "C4_Component.puml", es recomendable crear un directorio llamado C4lib para estos archivos. En el archivo C4lib.zip se encuentran los archivos ya configurados, solo hay que incluir el archivo "C4_Component.puml" escribiendo la instruccion: "!include C4lib/C4_Component.puml".
+Para poder crear cualquier tipo de diagrama C4 hay que incluir los cuatro archivos con extension "puml" en forma de cascada, empezando por el archivo "C4_Component.puml", es recomendable crear un directorio llamado C4lib para estos archivos. En el archivo C4lib.zip se encuentran los archivos ya configurados, solo hay que incluir el archivo "C4_Component.puml" escribiendo la instruccion: "!include C4lib/C4_Component.puml".
