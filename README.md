@@ -24,6 +24,6 @@ Ir a la seccion "Download", ir al instalador de windows que empieza con la palab
     
 **Instalacion de C4-PlantUML**    
     
-    La libreria C4-PlantUML se debe incluir en cada proyecto, los archivos de la libreria se encuentran en la siguiente pagina [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML "")
+La libreria C4-PlantUML se debe incluir en cada proyecto, los archivos de la libreria se encuentran en la siguiente pagina [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML "")
             
 Para poder crear cualquier tipo de diagrama C4 hay que incluir los cuatro archivos con extension "puml" en forma de cascada, empezando por el archivo "C4_Component.puml", es recomendable crear un directorio llamado C4lib para estos archivos. En el archivo C4lib.zip se encuentran los archivos ya configurados, solo hay que incluir el archivo "C4_Component.puml" escribiendo la instruccion: "!include C4lib/C4_Component.puml".
