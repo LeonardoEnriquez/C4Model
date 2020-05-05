@@ -29,14 +29,22 @@ La libreria C4-PlantUML se debe incluir en cada proyecto, los archivos de la lib
 Para poder crear cualquier tipo de diagrama C4 hay que incluir los cuatro archivos con extension "puml" en forma de cascada, empezando por el archivo "C4_Component.puml", es recomendable crear un directorio llamado C4lib para estos archivos. En el archivo C4lib.zip se encuentran los archivos ya configurados, solo hay que incluir el archivo "C4_Component.puml" escribiendo la instruccion: "!include C4lib/C4_Component.puml".
 
 ## Creación de diagramas con C4-PlantUML
-Los diagramas de **PlantUML**, independientemente de que sean o no del modelo **C4**, empiezan con **@startuml** (seguido puede ir el nombre del diagrama: **@staruml "nombre del diagrama"**) y terminan con **@enduml**. También se puede establecer el titulo del diagrama con: **title titulo del diagrama**.
-Para poder hacer diagramas del modelo **C4** es necesario importar la librería necesaria con **!import directorio/C4_Context.puml**. Si el diagrama es de contenedores o componentes se puede reemplazar **Context** por **Container** o **Component** respectivamente.
+Los diagramas de **PlantUML**, independientemente de que sean o no del modelo **C4**, empiezan con **@startuml** (seguido puede ir el nombre del diagrama: **@staruml "nombre del diagrama"**) y terminan con **@enduml**. 
+También se puede establecer el titulo del diagrama con: **title titulo del diagrama**.
+
+Para poder hacer diagramas del modelo **C4** es necesario importar la librería necesaria con **!import directorio/C4_Context.puml**. 
+Si el diagrama es de contenedores o componentes se puede reemplazar **Context** por **Container** o **Component** respectivamente.
+
 Los elementos que se pueden crear en un diagrama son:
 **Person**: Un usuario, puede ser externo (**Person_Ext**).
 **System**: Un sistema, puede ser externo (**System_Ext**).
 **Container**: Un contenedor de un sistema, puede ser una base de datos (**ContainerDb**).
 **Component**: Un componente de un contenedor.
+
 La sintaxis para cualquier elemento es **System(nombre, "titulo", "tecnologias", "descripcion")**.
+
 Los sistemas, contenedores y componentes se pueden agrupar con **Enterprise_Boundary**, **System_Boundary** y **Container_Boundary** respectivamente. La sintaxis para cualquier agrupamiento es **System_Boundary(nombre, "titulo") {...elementos pertenecientes al agrupamiento...}**.
+
 Para relacionar los elementos entre si se escribe **Rel(elementoA, elementoB, "tipo de relación", "tecnologias")**. Se puede relacionar en reversa con **Rel_Back**, a un vecino con **Rel_Neighbor** y a un vecino en reversa con **Rel_Back_Neighbor**. También se puede establecer la posición relativa del primer elemento con respecto al segundo elemento con **Rel_D** (arriba de), **Rel_U** (abajo de), **Rel_R** (a la izquierda) y **Rel_L** (a la derecha).
+
 En caso de que haya que cambiar la posición de algunos elementos se puede hacer directamente con **Lay_D**, **Lay_U**, **Lay_R** y **Lay_L**. Estas instrucciones son similares a las que empiezan con **Rel** pero solo modifican la posición de los elementos, y se usan de la siguiente manera: **Lay_R(elementoA, elementoB)**.
