@@ -48,3 +48,11 @@ Los sistemas, contenedores y componentes se pueden agrupar con **Enterprise_Boun
 Para relacionar los elementos entre si se escribe **Rel(elementoA, elementoB, "tipo de relación", "tecnologias")**. Se puede relacionar en reversa con **Rel_Back**, a un vecino con **Rel_Neighbor** y a un vecino en reversa con **Rel_Back_Neighbor**. También se puede establecer la posición relativa del primer elemento con respecto al segundo elemento con **Rel_D** (arriba de), **Rel_U** (abajo de), **Rel_R** (a la izquierda) y **Rel_L** (a la derecha).
 
 En caso de que haya que cambiar la posición de algunos elementos se puede hacer directamente con **Lay_D**, **Lay_U**, **Lay_R** y **Lay_L**. Estas instrucciones son similares a las que empiezan con **Rel** pero solo modifican la posición de los elementos, y se usan de la siguiente manera: **Lay_R(elementoA, elementoB)**.
+
+## C4Builder
+Informacion para instalar C4Builder
+```
+$ npm install c4builder
+```
+[Enlace: C4Builder](https://github.com/adrianvlupu/C4-Builder "")
+
